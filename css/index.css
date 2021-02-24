@@ -1,0 +1,432 @@
+/*TYPOGRAPHY*/
+h1 {
+    font-family: "Amatic SC", Arial, Helvetica, sans-serif;
+    font-size: 5em;
+    margin: 0;
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 10px 0px;
+}
+
+h2 {
+    font-family: "Amatic SC", Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    margin: 0;
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 10px 0px;
+}
+
+h3 {font-family: "Big Shoulders Inline Display", Arial, Helvetica, sans-serif;
+    font-size: 10em;
+    color: #1c1c1c;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h4 {
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 2.1em;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+a, p {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    color: #fff;
+    line-height: 1.5;
+}
+
+/* MENU AND LOGO*/
+header img {
+    width: 200px;
+    padding-left: 80px;
+}
+header {
+    padding: 10px;
+    background: #fff;
+    display: block;
+    align-items: center;
+    height: 90px;
+    padding-top: 30px;
+}
+
+.menu{
+    display: flex;
+    float: right;
+    padding-right: 80px;
+    align-items: center;
+  }
+  
+  
+  input{
+    display:none;
+  }
+  
+  .menu label{
+      font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+      font-size:3em;
+      text-align:right;
+      color: #666666;
+  }
+  
+  .menu label:hover{
+      cursor:pointer;
+      color: #FBCE47;
+  }
+  
+  .overlay{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0,0,0,0.9);
+  }
+  
+  .overlay label{
+      width: 58px;
+      height:58px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background-image: url(../images/exit.png);
+      cursor:pointer;
+  }
+  
+  .overlay nav {
+      text-align: center;
+      position: relative;
+      top: 40%;
+      height: 60%;
+      font-size:4em;
+      transform: translateY(-50%);
+  }
+  
+  .overlay ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: inline-block;
+      height: 100%;
+      position: relative;
+  }
+  
+  .overlay ul li {
+      display: block;
+      height: 20%;
+  
+  }
+  
+  .overlay ul li a {
+      font-weight: 300;
+      display: block;
+      color: white;
+      text-decoration:none;
+      transition: color 0.2s;
+      font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  }
+  
+  .overlay ul li a:hover,
+  .overlay ul li a:focus {
+      color: #FBCE47;
+  }
+  
+  .menu~.overlay-csm{
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s, visibility 0s 0.5s;
+  }
+  
+  #op:checked~.overlay-csm{
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.5s;
+  }
+  
+
+body {
+    margin: 0;
+}
+
+/* TOP PICTURE FRONT PAGE*/
+
+.top-picture {
+    background-image: url(../images/welcome-to-csm.jpg);
+    height: 700px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.top-content {
+    width: 480px;
+    margin-left: 150px;
+}
+
+/* BUTTONS */
+
+.yellow-button {
+    padding: 10px;
+    border: 3px solid #FBCE47;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
+    letter-spacing: 3px;
+    line-height: 1;
+}
+
+.yellow-button:hover {
+    background-color: #f2f2f2;
+    border: 3px solid #333333;
+    color: #333333;
+  }
+  
+.dark-button {
+    padding: 10px;
+    border: 3px solid #1c1c1c;
+    background-color: #1c1c1c;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
+    letter-spacing: 3px;
+    line-height: 1;
+    color: #FBCE47;;
+  }
+
+.dark-button:hover {
+    background-color: #f2f2f2;
+    border: 3px solid #1c1c1c;
+    color: #1c1c1c;
+  }
+  
+
+/*FRONT PAGE CONTENT*/
+
+.introduction-picture, 
+.introduction-content,
+.kids-picture,
+.kids-content,
+.teachers-picture,
+.teachers-content,
+.exhibition,
+.researchers-picture,
+.researchers-content {
+      height: 600px;
+      margin: 0;
+      margin: 0px 10px;
+  }
+
+.museum {
+    max-width: 1670px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px auto;
+    background-image: url(../images/csm-museum.jpg);
+    height: 800px;
+    background-position: center;
+    align-items: center;
+  }
+
+.kids-picture {
+    background-image: url(../images/For-kids.jpg);
+    background-position: center;
+    align-items: center;
+  }
+
+.kids-content {
+      background-color:#988E7D;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+.teachers-picture {
+    background-image: url(../images/for-teachers.jpg);
+    background-position: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+
+.teachers-content {
+    background-color:#666666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.researchers-content {
+    background-color:#232323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.researchers-picture {
+    background-image: url(../images/researchers.jpg);
+    background-position: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+
+.exhibition {
+    max-width: 1680px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px auto;
+    background-color: #FBCE47;
+  }
+
+.exhibition-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.csm-art {
+    background-image: url(../images/CSM-art-decor.jpg);
+    max-width: 1680px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px auto;
+    height: 800px;
+  }
+
+.kids,
+.teachers,
+.researchers,
+.introduction {
+    max-width: 1700px;
+    display: grid;
+    margin: 20px auto;
+  }
+
+.introduction {
+    grid-template-columns: 1fr 2fr;
+}
+
+.introduction-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+}
+
+.introduction-picture img {
+    height: 400px;
+}
+
+.introduction-content {
+    background-color: #666666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 500px;
+}
+
+.kids {
+    grid-template-columns: 1fr 2fr;
+  }
+
+.teachers {
+    grid-template-columns: 2fr 1fr;
+  }
+
+.researchers {
+    grid-template-columns: 1fr 2fr;
+
+  }
+
+  /*FOOTER*/
+
+footer {
+    background-color: #232323;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: auto;
+    height: 600px
+  }
+
+th {
+    text-align: left;
+    padding-right: 20px; 
+    
+  }
+
+tr {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    color: #fff;
+    line-height: 1.5;
+}
+
+li a {
+    line-height: 2em;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+footer ul a {
+    text-decoration: none;
+  }
+
+footer ul a:hover {
+    text-decoration: underline;
+    text-decoration-color: #FBCE47;
+    text-decoration-thickness: 3px;
+}
+
+
+.some {
+    color: #FBCE47;
+    font-size: 2em;
+    padding-right: 10px;
+  }
+
+.some:hover {
+    color: #fff;
+  }
+
+/* BACK TO TOP */
+
+.back-to-top {
+    display: flex;
+    justify-content: center;
+    margin:50px 0px;
+}
+
+.back-to-top i {
+    font-size: 2em;
+    color:#232323;
+}
+
+.back-to-top i:hover {
+    color: #5f5f5f;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
