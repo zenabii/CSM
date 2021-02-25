@@ -1,120 +1,194 @@
-@import "http://webfonts.ru/import/notcourier.css";
-
-.lower{
-  width:340px;
+.title-picture {
+	background: url(../images/exhibitions.jpg) no-repeat;
+	background-position: center;
+	height: 500px;
+	position: relative;
+	justify-content: center;
+	z-index: -1;
 }
 
-
-input{
-  display:none;
-}
-
-.lower label{
-    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
-    font-size:3em;
-    text-align:right;
-}
-
-.lower label:hover{
-    cursor:pointer;
-}
-
-.overlay{
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: rgba(0,0,0,0.9);
-}
-
-.overlay label{
-	width: 58px;
-	height:58px;
+.title-picture h1 {
+	font-family: "Big Shoulders Inline Display", Arial, Helvetica, sans-serif;
+    font-size: 8em;
+	text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
 	position: absolute;
-	right: 20px;
-	top: 20px;
-	background-image: url(../images/exit.png);
-    cursor:pointer;
-}
-
-.overlay nav {
-	text-align: center;
-	position: relative;
-	top: 50%;
-	height: 60%;
-	font-size:4em;
-    transform: translateY(-50%);
-}
-
-.overlay ul {
-	list-style: none;
-	padding: 0;
-	margin: 0 auto;
-	display: inline-block;
-	height: 100%;
-	position: relative;
-}
-
-.overlay ul li {
-	display: block;
-	height: 20%;
-
-}
-
-.overlay ul li a {
-	font-weight: 300;
-	display: block;
-	color: white;
-    text-decoration:none;
-	transition: color 0.2s;
-    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
-}
-
-.overlay ul li a:hover,
-.overlay ul li a:focus {
-	color: #FBCE47;
-}
-
-.lower~.overlay-csm{
-	opacity: 0;
-	visibility: hidden;
-	transition: opacity 0.5s, visibility 0s 0.5s;
-}
-
-#op:checked~.overlay-csm{
-	opacity: 1;
+	bottom: 0;
+	padding-bottom: 0;
+	padding-left: 300px;
 	visibility: visible;
-	transition: opacity 0.5s;
 }
 
-/*OLD*/
-nav {
-    width: 100%;
-    padding-right: 50px;
-}
+.museum-architecture {
+    max-width: 1670px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px auto;
+    background: url(../images/museum-architecture.jpg) no-repeat;
+    background-size: cover;
+    height: 800px;
+    background-position: center;
+    align-items: center;
+  }
 
-nav ul {
-    display: flex;
-    padding: 0;
-    float: right;
+/*CONTENT STYLING*/
+
+.cosmology,
+.evolution,
+.biology,
+.robotics,
+.ecology {
+    max-width: 1700px;
+    display: grid;
+    margin: 20px auto;
+  }
+
+.cosmology-content,
+.cosmology-picture,
+.evolution-picture,
+.evolution-content,
+.biology-picture,
+.biology-content,
+.robotics-content,
+.robotics-picture,
+.ecology-content,
+.ecology-picture {
+height: 600px;
+margin: 0;
+margin: 0px 10px;
+}
+  
+/*COSMO*/
+.cosmology-picture {
+    background: url(../images/cosmology.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+  }
+
+.cosmology-content {
+      background-color:#988E7D;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+.cosmology {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  /*EVOLUTION*/
+.evolution-picture {
+	background: url(../images/evolution.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
     align-items: center;
 }
 
-nav li {
-    display: block;
+.evolution-content {
+	background-color:#666666;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-nav a {
-    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    color: #1c1c1c;
-    font-size: 1.5em;
-    padding: 10px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-    text-decoration-color: #FBCE47;
-    text-decoration-thickness: 3px;
+.evolution {
+    grid-template-columns: 1fr 2fr;
   }
+
+  /*BIO*/
+.biology-picture {
+    background: url(../images/biology.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+  }
+
+.biology-content {
+      background-color:#232323;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+.biology {
+    grid-template-columns: 2fr 1fr;
+  }
+
+    /*ROBOTICS*/
+.robotics-picture {
+	background: url(../images/robotics.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.robotics-content {
+	background-color:#988E7D;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.robotics {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  /*ECOLOGY*/
+  .ecology-picture {
+    background: url(../images/ecology.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+  }
+
+.ecology-content {
+      background-color:#666666;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+.ecology {
+    grid-template-columns: 2fr 1fr;
+  }
+
+
+
+  @media (max-width: 950px) {
+	.title-picture h1 {
+		visibility: hidden;
+	}
+
+	.cosmology,
+    .evolution,
+    .biology,
+    .robotics,
+    .ecology {
+        grid-template-columns: 1fr;
+    }
+
+	.cosmology-content,
+    .evolution-content,
+    .biology-content,
+    .robotics-content,
+    .ecology-content {
+        height: auto;
+        margin: 10px;
+        padding: 30px 0px;
+
+    }
+
+	
+
+  }
+
+  @media (max-width: 1700px), (min-width: 800px) {
+    .content {
+        max-width: 400px;
+        margin: 10px;
+    }
+
+
+    }
