@@ -1,0 +1,135 @@
+.title-picture {
+	background: url(../images/get-involved.jpg) no-repeat;
+	background-position: center;
+	height: 500px;
+	position: relative;
+	justify-content: center;
+	z-index: -1;
+}
+
+.title-picture h1 {
+	font-family: "Big Shoulders Inline Display", Arial, Helvetica, sans-serif;
+    font-size: 8em;
+	text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 0;
+	padding-left: 300px;
+	visibility: visible;
+    max-width: 300px;
+}
+
+/*CONTENT STYLING*/
+
+.support,
+.volunteer,
+.internships {
+    max-width: 1700px;
+    display: grid;
+    margin: 20px auto;
+  }
+
+
+.support-content,
+.support-picture,
+.volunteer-content,
+.volunteer-picture,
+.internships-content,
+.internships-picture {
+height: 600px;
+margin: 0;
+margin: 0px 10px;
+}
+
+/*SUPPORT*/
+.support-picture {
+    background: url(../images/support.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.support-content {
+    background-color:#988E7D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.support {
+    grid-template-columns: 1fr 2fr;
+    }
+
+  /*VOLUNTEER*/
+  .volunteer-picture {
+    background: url(../images/volunteer.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+  }
+
+.volunteer-content {
+      background-color:#232323;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+.volunteer {
+    grid-template-columns: 2fr 1fr;
+  }
+
+ /*INTERNSHIPS*/
+  .internships-picture {
+	background: url(../images/internships.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.internships-content {
+	background-color:#666666;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.internships {
+    grid-template-columns: 1fr 2fr;
+  }
+
+
+  @media (max-width: 950px) {
+	.title-picture h1 {
+		visibility: hidden;
+	}
+
+    .support,
+    .volunteer,
+    .internships {
+        grid-template-columns: 1fr;
+    }
+
+    .support-content,
+    .volunteer-content,
+    .internships-content {
+        height: auto;
+        margin: 10px;
+        padding: 30px 0px;
+
+    }
+
+	
+
+  }
+
+  @media (max-width: 1700px), (min-width: 800px) {
+    .content {
+        max-width: 400px;
+        margin: 10px;
+    }
+
+
+    }

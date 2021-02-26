@@ -1,0 +1,207 @@
+.title-picture {
+	background: url(../images/visit-us.jpg) no-repeat;
+	background-position: center;
+	height: 500px;
+	position: relative;
+	justify-content: center;
+	z-index: -1;
+}
+
+.title-picture h1 {
+	font-family: "Big Shoulders Inline Display", Arial, Helvetica, sans-serif;
+    font-size: 8em;
+	text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 0;
+	padding-left: 300px;
+	visibility: visible;
+}
+
+
+.accessbility,
+.food-drink,
+.shop,
+.admission {
+    max-width: 1700px;
+    display: grid;
+    margin: 20px auto;
+  }
+
+.accessbility-content,
+.accessbility-picture,
+.food-drink-content,
+.food-drink-picture,
+.shop-content,
+.shop-picture {
+height: 400px;
+margin: 0;
+margin: 0px 10px;
+}
+
+/*ADMISSION*/
+
+.admission-content,
+.hours-content {
+    height: 600px;
+    margin: 0;
+    margin: 0px 10px;
+    }
+
+.admission-content {
+background-color:#232323;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.hours-content {
+      background-color:#FBCE47;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+.admission {
+    grid-template-columns: 2fr 1fr;
+  }
+
+.opening-hours {
+width: 500px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.opening-hours h2 {
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-size:3em;
+    color: #1c1c1c;
+}
+
+
+  .opening-hours tr {
+    color: #1c1c1c;
+    line-height: 2.5;
+}
+
+/*ACCESSIBILITY*/
+.accessbility-picture {
+    background: url(../images/accessibility.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    align-items: center;
+}
+
+.accessbility-content {
+    background-color:#988E7D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accessbility {
+    grid-template-columns: 1fr 2fr;
+    }
+    
+
+/*FOOD AND DRINK*/
+.food-drink-picture {
+background: url(../images/food-and-drink.jpg) no-repeat;
+background-size: cover;
+background-position: center;
+align-items: center;
+}
+
+.food-drink-content {
+    background-color:#232323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-drink {
+grid-template-columns: 2fr 1fr;
+}
+
+ /*SHOP*/
+ .shop-picture {
+	background: url(../images/internships.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    align-items: center;
+}
+
+.shop-content {
+	background-color:#666666;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.shop {
+    grid-template-columns: 1fr 2fr;
+  }
+
+
+
+
+/*GOOGLE MAP*/
+
+.map{
+    overflow:hidden;
+    padding-bottom:30%;
+    position:relative;
+    height:0;
+    max-width: 1680px;
+    margin: auto;
+    z-index: -1;
+}
+
+.map iframe{
+    left:0;
+    top:0;
+    height:600px;
+    width:100%;
+    position:absolute;
+}
+
+@media (max-width: 950px) {
+	.title-picture h1 {
+		visibility: hidden;
+	}
+
+    .accessbility,
+    .food-drink,
+    .shop,
+    .admission {
+        grid-template-columns: 1fr;
+    }
+
+    .accessbility-content,
+    .food-drink-content,
+    .shop-content,
+    .admission-content {
+        height: auto;
+        margin: 10px;
+        padding: 30px 0px;
+
+    }
+
+	.map {
+        padding-bottom:100%;
+    }
+
+  }
+
+  @media (max-width: 1700px), (min-width: 800px) {
+    .content {
+        max-width: 400px;
+        margin: 10px;
+    }
+
+
+    }

@@ -1,0 +1,190 @@
+.title-picture {
+	background: url(../images/events.jpg) no-repeat;
+	background-position: center;
+	height: 500px;
+	position: relative;
+	justify-content: center;
+	z-index: -1;
+}
+
+.title-picture h1 {
+	font-family: "Big Shoulders Inline Display", Arial, Helvetica, sans-serif;
+    font-size: 8em;
+	text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 0;
+	padding-left: 300px;
+	visibility: visible;
+    width: 400px;
+}
+
+/***** FIRST ROW *****/
+
+.professor,
+.night-museum,
+.energetica {
+    height: 500px;
+    margin: 20px auto;
+
+    max-width: 1700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    padding: 20px;
+    
+}
+
+.professor {
+    background-color: #232323;
+}
+
+.professor-title,
+.event-title {
+    height: 300px;
+    margin: auto 130px;
+    width: 100%;
+}
+
+.professor-title h2,
+.event-title h2 {
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.professor-title h2 {
+    color: #fff;
+}
+
+.professor-title h3,
+.event-title h3 {
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-size: 5em;
+    letter-spacing: 1px;
+    font-weight: 300;
+    width: 550px;
+}
+
+.professor-title h3 {
+    color: #fff;
+}
+
+.content-info,
+.event-info {
+    height: auto;
+    margin: auto;
+    width: 100%;   
+}
+
+.content-info {
+    border-left: 3px solid white;
+}
+
+.content-info p,
+.event-info p {
+    margin: auto;
+    padding: 2%;
+    width: 400px;
+    font-weight: 500;
+}
+
+.line {
+    width: 40px;
+    height: auto;
+    padding: 10px 0px;
+  }
+
+
+  
+/***** SECOND ROW *****/
+
+.night-museum {
+    background-color: #FBCE47;
+    
+}
+
+.event-title h2 {
+    color: #1C1C1C;
+}
+
+.event-title h3 {
+    color: #1C1C1C;
+}
+
+.event-info {
+    border-left: 3px solid #1C1C1C;
+}
+
+.event-info p {
+    color: #1C1C1C;
+}
+
+
+/***** THIRD ROW *****/
+
+.energetica {
+    background-color: #988E7D;
+}
+
+
+@media (max-width: 1300px) {
+	.title-picture h1 {
+		visibility: hidden;
+	}
+
+    .professor,
+    .night-museum,
+    .energetica {
+        grid-template-columns: 1fr;
+        padding: 50px 20px;
+        margin: 20px auto;
+        height: 700px;
+
+    }
+
+    .event-info {
+        height: auto;
+        margin: 10px;
+        padding: 30px 0px;
+
+    }
+
+    .professor-title,
+    .event-title {
+        padding: 0;
+        margin: 0;
+    }
+
+    .professor-title h3,
+    .event-title h3 {
+        font-size: 4em;
+        width: 300px;
+    }
+
+    .event-info,
+    .content-info {
+        border-left: none;
+    }
+
+    .event-info p,
+    .content-info p {
+        width: 300px;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 3%;
+    }
+
+  }
+
+  @media (max-width: 1700px), (min-width: 800px) {
+    .content {
+        max-width: 400px;
+        margin: 10px;
+    }
+
+
+    }
