@@ -154,6 +154,8 @@
   grid-template-columns: 2fr 1fr;
 }
 
+/*** RESPONSIVE ****/
+
 @media (max-width: 950px) {
   .title-picture h1 {
     display: none;

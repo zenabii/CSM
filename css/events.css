@@ -125,6 +125,8 @@
   background-color: #988e7d;
 }
 
+/*** RESPONSIVE ****/
+
 @media (max-width: 1300px) {
   .title-picture h1 {
     display: none;

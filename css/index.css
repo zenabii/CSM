@@ -430,6 +430,8 @@ html {
   scroll-behavior: smooth;
 }
 
+/*** RESPONSIVE ****/
+
 @media (max-width: 800px) {
   h3 {
     font-size: 4em;

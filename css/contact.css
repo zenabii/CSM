@@ -108,6 +108,8 @@
   text-decoration: underline;
 }
 
+/*** RESPONSIVE ****/
+
 @media (max-width: 768px) {
   .people {
     grid-template-columns: 1fr 1fr;
