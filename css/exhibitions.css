@@ -68,7 +68,7 @@ margin: 0px 10px;
   }
 
 .cosmology-content {
-      background-color:#988E7D;
+      background-color:#726856;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -125,7 +125,7 @@ margin: 0px 10px;
 }
 
 .robotics-content {
-	background-color:#988E7D;
+	background-color:#726856;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -158,7 +158,7 @@ margin: 0px 10px;
 
   @media (max-width: 950px) {
 	.title-picture h1 {
-		visibility: hidden;
+		display: none;
 	}
 
 	.cosmology,

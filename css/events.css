@@ -133,7 +133,7 @@
 
 @media (max-width: 1300px) {
 	.title-picture h1 {
-		visibility: hidden;
+		display: none;
 	}
 
     .professor,

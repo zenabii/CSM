@@ -97,7 +97,7 @@ align-items: center;
 }
 
 .accessbility-content {
-    background-color:#988E7D;
+    background-color:#726856;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,7 +171,7 @@ grid-template-columns: 2fr 1fr;
 
 @media (max-width: 950px) {
 	.title-picture h1 {
-		visibility: hidden;
+		display: none;
 	}
 
     .accessbility,

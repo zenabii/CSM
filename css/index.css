@@ -100,7 +100,7 @@ header {
       position: relative;
       top: 40%;
       height: 60%;
-      font-size:4em;
+      font-size:3em;
       transform: translateY(-50%);
   }
   
@@ -245,7 +245,7 @@ body {
   }
 
 .kids-content {
-      background-color:#988E7D;
+      background-color: #726856;
       display: flex;
       justify-content: center;
       align-items: center;
