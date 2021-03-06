@@ -1,47 +1,98 @@
 .contact-picture {
-    background-color: #FBCE47;
-	height: 500px;
-	display: flex;
-    align-items: center;
-	justify-content: center;
-	z-index: -1;
+  background-color: #fbce47;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
 }
 
 .contact-picture img {
-    height: 250px;
-    margin: 0 auto;
-    display: flex;
-    color: #1c1c1c;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  color: #1c1c1c;
 }
-
 
 /***GENERAL INFO AND PRESS****/
 
 .info {
-    background-color: #1C1C1C;
-    max-width: 1700px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 20px auto;
-    height: 500px;
+  background-color: #1c1c1c;
+  max-width: 1700px;
+  display: grid;
+  align-items: baseline;
+  padding-top: 100px;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px auto;
+  height: 400px;
 }
 
 .general {
-    display: flex;
-    align-items: left;
-	justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .general h1,
 .general h2 {
-    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
-    font-size: 3em;
-    letter-spacing: 1px;
-    font-weight: 300;
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  letter-spacing: 1px;
+  font-weight: 300;
 }
 
 .general p {
-    text-decoration: underline 1px white;
+  text-decoration: underline 1px white;
+}
+
+.line {
+  width: 60px;
+  height: 3px;
+  padding: 10px 0px;
+}
+
+.people {
+  background-color: #988e7d;
+  max-width: 1700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+}
+
+.contact-person {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 60px auto;
+}
+
+/*** TYPOGRAPHY ***/
+
+.contact-person h3 {
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  color: #232323;
+  font-size: 2em;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.contact-person h4 {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: #232323;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  font-style: italic;
+  margin: 0;
+  font-weight: 500;
+}
+
+.contact-person p {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: #232323;
+  font-size: 1em;
+  letter-spacing: 1px;
+  margin: 0;
+  text-decoration: underline;
 }
