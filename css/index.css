@@ -405,6 +405,10 @@ footer ul a:hover {
   color: #fff;
 }
 
+footer a {
+  text-decoration: underline 1px white;
+}
+
 /* BACK TO TOP */
 
 .back-to-top {

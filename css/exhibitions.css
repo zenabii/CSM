@@ -1,36 +1,36 @@
 .title-picture {
-	background: url(../images/exhibitions.jpg) no-repeat;
-	background-position: center;
-	height: 500px;
-	position: relative;
-	justify-content: center;
-	z-index: -1;
+  background: url(../images/exhibitions.jpg) no-repeat;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  justify-content: center;
+  z-index: -1;
 }
 
 .title-picture h1 {
-	font-family: "Big Shoulders Inline Display", Arial, Helvetica, sans-serif;
-    font-size: 8em;
-	text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #fff;
-	position: absolute;
-	bottom: 0;
-	padding-bottom: 0;
-	padding-left: 300px;
-	visibility: visible;
+  font-family: "Big Shoulders Inline Display", Arial, Helvetica, sans-serif;
+  font-size: 8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 0;
+  padding-left: 300px;
+  visibility: visible;
 }
 
 .museum-architecture {
-    max-width: 1670px;
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 20px auto;
-    background: url(../images/museum-architecture.jpg) no-repeat;
-    background-size: cover;
-    height: 800px;
-    background-position: center;
-    align-items: center;
-  }
+  max-width: 1670px;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 20px auto;
+  background: url(../images/museum-architecture.jpg) no-repeat;
+  background-size: cover;
+  height: 800px;
+  background-position: center;
+  align-items: center;
+}
 
 /*CONTENT STYLING*/
 
@@ -39,10 +39,10 @@
 .biology,
 .robotics,
 .ecology {
-    max-width: 1700px;
-    display: grid;
-    margin: 20px auto;
-  }
+  max-width: 1700px;
+  display: grid;
+  margin: 20px auto;
+}
 
 .cosmology-content,
 .cosmology-picture,
@@ -54,141 +54,133 @@
 .robotics-picture,
 .ecology-content,
 .ecology-picture {
-height: 600px;
-margin: 0;
-margin: 0px 10px;
+  height: 600px;
+  margin: 0;
+  margin: 0px 10px;
 }
-  
+
 /*COSMO*/
 .cosmology-picture {
-    background: url(../images/cosmology.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-  }
+  background: url(../images/cosmology.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+}
 
 .cosmology-content {
-      background-color:#726856;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
+  background-color: #726856;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .cosmology {
-    grid-template-columns: 2fr 1fr;
-  }
+  grid-template-columns: 2fr 1fr;
+}
 
-  /*EVOLUTION*/
+/*EVOLUTION*/
 .evolution-picture {
-	background: url(../images/evolution.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    align-items: center;
+  background: url(../images/evolution.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
 }
 
 .evolution-content {
-	background-color:#666666;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  background-color: #666666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .evolution {
-    grid-template-columns: 1fr 2fr;
-  }
+  grid-template-columns: 1fr 2fr;
+}
 
-  /*BIO*/
+/*BIO*/
 .biology-picture {
-    background: url(../images/biology.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-  }
+  background: url(../images/biology.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+}
 
 .biology-content {
-      background-color:#232323;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
+  background-color: #232323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .biology {
-    grid-template-columns: 2fr 1fr;
-  }
+  grid-template-columns: 2fr 1fr;
+}
 
-    /*ROBOTICS*/
+/*ROBOTICS*/
 .robotics-picture {
-	background: url(../images/robotics.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    align-items: center;
+  background: url(../images/robotics.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
 }
 
 .robotics-content {
-	background-color:#726856;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  background-color: #726856;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .robotics {
-    grid-template-columns: 1fr 2fr;
-  }
+  grid-template-columns: 1fr 2fr;
+}
 
-  /*ECOLOGY*/
-  .ecology-picture {
-    background: url(../images/ecology.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-  }
+/*ECOLOGY*/
+.ecology-picture {
+  background: url(../images/ecology.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+}
 
 .ecology-content {
-      background-color:#666666;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
+  background-color: #666666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .ecology {
-    grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
+}
+
+@media (max-width: 950px) {
+  .title-picture h1 {
+    display: none;
   }
 
-
-
-  @media (max-width: 950px) {
-	.title-picture h1 {
-		display: none;
-	}
-
-	.cosmology,
-    .evolution,
-    .biology,
-    .robotics,
-    .ecology {
-        grid-template-columns: 1fr;
-    }
-
-	.cosmology-content,
-    .evolution-content,
-    .biology-content,
-    .robotics-content,
-    .ecology-content {
-        height: auto;
-        margin: 10px;
-        padding: 30px 0px;
-
-    }
-
-	
-
+  .cosmology,
+  .evolution,
+  .biology,
+  .robotics,
+  .ecology {
+    grid-template-columns: 1fr;
   }
 
-  @media (max-width: 1700px), (min-width: 800px) {
-    .content {
-        max-width: 400px;
-        margin: 10px;
-    }
+  .cosmology-content,
+  .evolution-content,
+  .biology-content,
+  .robotics-content,
+  .ecology-content {
+    height: auto;
+    margin: 10px;
+    padding: 30px 0px;
+  }
+}
 
-
-    }
+@media (max-width: 1700px), (min-width: 800px) {
+  .content {
+    max-width: 400px;
+    margin: 10px;
+  }
+}

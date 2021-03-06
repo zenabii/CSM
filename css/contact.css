@@ -35,20 +35,30 @@
 }
 
 .general h1,
-.general h2 {
+.general h2,
+.contact h2 {
   font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
   font-size: 3em;
   letter-spacing: 1px;
   font-weight: 300;
 }
 
-.general p {
+.general p,
+.general a {
   text-decoration: underline 1px white;
+}
+
+.general a {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 1em;
+  letter-spacing: 1px;
+  margin: 15px 0;
+  text-decoration: underline;
 }
 
 .line {
   width: 50px;
-
   padding: 10px 0px;
 }
 
@@ -88,7 +98,8 @@
   font-weight: 500;
 }
 
-.contact-person p {
+.contact-person p,
+.contact-person a {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   color: #232323;
   font-size: 1em;
