@@ -47,8 +47,8 @@
 }
 
 .line {
-  width: 60px;
-  height: 3px;
+  width: 50px;
+
   padding: 10px 0px;
 }
 
@@ -95,4 +95,34 @@
   letter-spacing: 1px;
   margin: 0;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .people {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-picture img {
+    height: 150px;
+  }
+
+  .info {
+    padding: 50px;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .people {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-picture img {
+    height: 100px;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+    display: block;
+  }
 }
