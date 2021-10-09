@@ -41,6 +41,10 @@ p {
   text-decoration: none;
 }
 
+.overlay ul li > .active {
+  color: #fbce47;
+}
+
 /* MENU AND LOGO*/
 header img {
   width: 200px;
